@@ -9,18 +9,18 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="329dp"
-        android:layout_height="75dp"
+        android:layout_width="333dp"
+        android:layout_height="88dp"
         android:text="      Login"
         android:textColor="?attr/colorOnBackground"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
+        app:layout_constraintVertical_bias="0.105"
         tools:ignore="HardcodedText" />
 
     <EditText
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="@+id/inputEmail"
         app:layout_constraintStart_toStartOf="@+id/inputEmail"
         app:layout_constraintTop_toBottomOf="@+id/inputEmail"
-        app:layout_constraintVertical_bias="0.19999999"
+        app:layout_constraintVertical_bias="0.261"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
@@ -107,10 +107,9 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/logInButton"
-        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/logInButton"
         app:layout_constraintTop_toBottomOf="@+id/logInButton"
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ExtraText">
         android:textAlign="center"
         android:gravity="center">
@@ -119,7 +118,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="                Don't Have An Account? "
-
             android:textColor="@color/design_default_color_on_secondary"
             tools:ignore="HardcodedText" />
 
@@ -133,5 +131,60 @@
             android:textStyle="normal|bold"
             tools:ignore="HardcodedText" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGoogleAndFacebbok"
+        android:layout_width="387dp"
+        android:layout_height="79dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.235"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="179dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="02dp"
+            android:background="@drawable/button_bg"
+            android:drawableLeft="@drawable/google_logo"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+            app:layout_constraintStart_toStartOf="@+id/inputEmail"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+            app:layout_constraintVertical_bias="0.19999999"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/facebokButton"
+            android:layout_width="179dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="02dp"
+            android:background="@drawable/button_bg"
+            android:drawableLeft="@drawable/google_logo"
+            android:text="Facebook"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+            app:layout_constraintStart_toStartOf="@+id/inputEmail"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+            app:layout_constraintVertical_bias="0.19999999"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
