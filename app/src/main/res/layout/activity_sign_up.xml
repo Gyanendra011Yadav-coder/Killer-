@@ -135,6 +135,7 @@
         android:paddingBottom="16dp"
         android:text="Submit"
         android:textSize="24dp"
+        android:textAllCaps="false"
         app:backgroundTint="@color/design_default_color_on_secondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/inputConfirmPassword"
