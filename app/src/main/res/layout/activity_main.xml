@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
 
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/killer_short_video_sharing_app_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
