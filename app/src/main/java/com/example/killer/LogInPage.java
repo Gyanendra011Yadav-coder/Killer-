@@ -43,8 +43,6 @@ public class LogInPage extends AppCompatActivity {
             }
         });
 
-
-
         //This Code Is for Changing The Activity for Sign-Up.
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
