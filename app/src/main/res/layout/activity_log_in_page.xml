@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInPage"
-    android:background="@drawable/backgroundimage">
+    android:background="@drawable/backgroundimage"
+    tools:context=".LogInPage">
 
     <TextView
         android:id="@+id/textView"
@@ -45,7 +45,7 @@
         tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded" />
 
     <EditText
-        android:id="@+id/inputEmail"
+        android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/input_bg"
@@ -76,10 +76,10 @@
         android:textSize="16sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintEnd_toEndOf="@+id/password"
         app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.01999998"
         tools:ignore="HardcodedText" />
 
@@ -93,10 +93,11 @@
         android:textSize="20sp"
         app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-        app:layout_constraintStart_toStartOf="@+id/inputEmail"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
-        app:layout_constraintVertical_bias="0.261"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.204"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
@@ -132,59 +133,35 @@
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayoutGoogleAndFacebbok"
-        android:layout_width="387dp"
-        android:layout_height="79dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:textAlign="center"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_google"
+        android:layout_width="75dp"
+        android:layout_height="67dp"
+        android:background="@drawable/google_logo_9808"
+        android:backgroundTint="@color/white"
+        android:elevation="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.331"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.235"
-        tools:ignore="ExtraText">
+        app:layout_constraintVertical_bias="0.462"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/googleButton"
-            android:layout_width="179dp"
-            android:layout_height="60dp"
-            android:layout_marginRight="02dp"
-            android:background="@drawable/button_bg"
-            android:drawableLeft="@drawable/google_logo"
-            android:text="Google"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            app:backgroundTint="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-            app:layout_constraintStart_toStartOf="@+id/inputEmail"
-            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
-            app:layout_constraintVertical_bias="0.19999999"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/facebokButton"
-            android:layout_width="179dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="02dp"
-            android:background="@drawable/button_bg"
-            android:drawableLeft="@drawable/google_logo"
-            android:text="Facebook"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-
-            app:backgroundTint="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-            app:layout_constraintStart_toStartOf="@+id/inputEmail"
-            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
-            app:layout_constraintVertical_bias="0.19999999"
-            tools:ignore="HardcodedText" />
-
-
-    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_fb"
+        android:layout_width="75dp"
+        android:layout_height="67dp"
+        android:background="@drawable/facebook_logo_png_9024"
+        android:backgroundTint="@color/white"
+        android:elevation="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toEndOf="@+id/fab_google"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.462"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

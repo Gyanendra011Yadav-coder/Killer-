@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "871818774422",
+    "project_id": "killershortvideosharingapp",
+    "storage_bucket": "killershortvideosharingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871818774422:android:5211f60d24d5afbad93fb7",
+        "android_client_info": {
+          "package_name": "com.example.killer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871818774422-0bvtbgvu2pf5inflpk2c32nanqbv5p4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6oTT6dfjEWh6PugQTKVutNnyMkDrOpWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871818774422-0bvtbgvu2pf5inflpk2c32nanqbv5p4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
